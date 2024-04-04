@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator BMI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator BMI</h1>
+    </header>
+    <main>
+      <!-- usahakan nama class pakai bahasa inggris -->
+      <div class="main-container">
+        <!-- Form Display-->
+        <div class="container-item">
+          <h2>Form BMI</h2>
+          <section>
+            <p>Berat Badan Ideal adalah ....</p>
+          </section>
+          <section class="container-form">
+            <div>
+              <div class="label-gender">
+                <label>Jenis Kelamin</label> <br />
+              </div>
+              <input type="radio" name="gender" id="men" /><label for="men"
+                >Laki-laki</label
+              >
+              <input type="radio" name="gender" id="women" /><label for="women"
+                >Perempuan</label
+              >
+            </div>
+            <div class="data-input">
+              <label>Berat Badan (Kg)</label>
+              <br />
+              <!-- Validation in JS -->
+              <input id="weight" type="text" />
+            </div>
+            <div class="data-input">
+              <label>Usia (tahun)</label>
+              <br />
+              <!-- Validation in JS -->
+              <input type="text" />
+            </div>
+            <div class="data-input">
+              <label>Tinggi Badan (cm)</label>
+              <br />
+              <!-- Validation in JS -->
+              <input id="height" type="text" />
+            </div>
+            <div>
+              <button class="calculate-btn" onclick="calculateBMI()">
+                HITUNG BMI
+              </button>
+              <button onclick="resetInputs()">Reset</button>
+            </div>
+          </section>
+          <div>
+            <h3>Keunggulan Fitur</h3>
+            <p>........</p>
+          </div>
+        </div>
+
+        <!-- Result Display -->
+        <div class="container-item">
+          <h2>Result</h2>
+          <section class="container-result">
+            <h3 id="bmiTeks1"></h3>
+            <h1 id="bmiNumber"></h1>
+            <div id="bmiTeks2"></div>
+            <!-- no action -->
+            <button type="button">Download Hasil BMI</button>
+          </section>
+          <div id="result1"></div>
+          <div id="result2"></div>
+          <div id="result3"></div>
+          <section>
+            <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button>Registrasi Online Ahli Gizi</button>
+          </section>
+          <div>
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+            tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
+            lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+            badan Anda.
+          </div>
+          <section class="container-result">
+            <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
+            <h4>Diabetes</h4>
+            <h4>Hipertensi</h4>
+            <h4>Sakit Jantung</h4>
+            <h4>Osteoarthritis</h4>
+            <!-- no action -->
+            <button>Konsultasi Dokter Via Aplikasi</button>
+            <button>Registrasi Online Sekarang</button>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
